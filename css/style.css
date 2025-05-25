@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@keyframes caixaFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-8px);
+  }
+  80% {
+    transform: scale(0.98) translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.caixa-animada {
+  animation: caixaFadeIn 1.0s cubic-bezier(.68,-0.55,.27,1.55);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/pexels-pixabay-258149.jpg");
+  background-size: cover;
+}
+
+.caixa-maior {
+  background: rgba(0, 0, 0, 0.801);
+  border-radius: 25px;
+  padding: 20px;
+  width: 95%; 
+  max-width: 500px; 
+}
+
+.caixa-media {
+  margin-top: 30px;
+}
+
+.caixa-maior input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  width: calc(100% - 50px);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 10px #000000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+  position: absolute;
+  top: -500px;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.botao-busca {
+border: none;
+  outline: none;
+  padding: 13px;
+  border-radius: 50px;
+  background: #3a38382b;
+  cursor: pointer;
+  float: right;
+  transition: all 0.2s ease;
+  transform: scale(0.9); 
+}
+
+.botao-busca:hover {
+  background: #ebd6d6;
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.botao-busca:active {
+  background: #ebd6d6;
+  transform: scale(0.9);
+}
+
+.img-busca {
+  width: 20px;
+}
+
+
+.cidade {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.umidade{
+    color:white;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    text-transform: capitalize;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(0, 255, 234);
+}
